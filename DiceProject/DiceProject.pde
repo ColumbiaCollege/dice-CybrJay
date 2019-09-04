@@ -5,8 +5,6 @@ void setup() {
   size(900, 500);
   img = loadImage("StockDice.png");
   img.resize(900, 500);
- 
-
 }
 
 void draw() {
@@ -21,6 +19,7 @@ void draw() {
 
   //text
   textSize(35);
+  
   //text(int(random(6)), width/2, height/2);
   //fill
   //fill(#33E3FF);
@@ -30,7 +29,7 @@ void mouseClicked() {
   background(0);
   frameRate(8);
   //fill for text
-  fill(#33E3FF);
+  fill(#EE1414);
   //Random
   text(int(random(6)), width/2, height/2);
 } 
