@@ -18,9 +18,13 @@ void mouseClicked() {
 } 
 
 void draw() {
-  background(0);
+  //background(0);
   image(img, 0, 0);
   
+  textAlign(CENTER, TOP);
+  String s = "Click the die to get random number from 0 to 6.";
+  text(s, 150, 250, 80, 100);
+  fill(#EE1414);
   frameRate(4);
   //number
   //println(6);
@@ -29,11 +33,13 @@ void draw() {
   //println(Mark);
 
   //text
-  fill(#EE1414);
-  String s = "Click the die to get random number from 0 to 6.";
-  text(s, 300, 500, 125, 140);
+  //fill(#EE1414);
+  textAlign(CENTER, TOP);
+  //String s = "Click the die to get random number from 0 to 6.";
+  //text(s, 150, 250, 80, 100);
+  //text(s, 150, 250, 125, 140);
   textSize(75);
-  textAlign(CENTER, CENTER);
+  //textAlign(CENTER, TOP);
   //text(int(random(6)), width/2, height/2);
   //fill
   //fill(#33E3FF);
