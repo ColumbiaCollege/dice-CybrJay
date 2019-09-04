@@ -6,6 +6,7 @@ void setup() {
   img = loadImage("StockDice.png");
   img.resize(900, 500);
   frameRate(1);
+
 }
 
 
