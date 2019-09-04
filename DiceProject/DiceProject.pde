@@ -30,7 +30,7 @@ void draw() {
 
   //text
   fill(#EE1414);
-  String s = "The quick brown fox jumps over the lazy dog.";
+  String s = "Click the die to get random number from 0 to 6.";
   text(s, 300, 500, 125, 140);
   textSize(75);
   textAlign(CENTER, CENTER);
