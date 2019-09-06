@@ -1,46 +1,42 @@
 //Dice Project
 
 PImage img;
+PFont font;
+String s = "Click the die to get a random number from 0 to 6.";
 void setup() {
+  font = createFont("magnison Script Free.ttf", 43);
   size(900, 500);
+  //Loads image for window
   img = loadImage("StockDice.png");
+  //Resizes image for window 
   img.resize(900, 500);
+  //Font for text
+  textFont(font);
+  //Rate of frames for number
+  frameRate(8);
+  //Tricks mouseClicked for setup so text doesn't get borked
+  mouseClicked();
 }
-
-void mouseClicked() {
-  //background(0);
-  //frameRate(24);
-  //fill for text
-  fill(000000);
-   
-  //Random
-  text(int(random(6)), width/2, height/2);
-} 
-
 void draw() {
-  //background(0);
-  image(img, 0, 0);
   
-  textAlign(CENTER, TOP);
-  String s = "Click the die to get random number from 0 to 6.";
-  text(s, 150, 250, 80, 100);
+  background(0);
+  //location for dice image
+  image(img, 0, 0);
+  //fill for text
   fill(#EE1414);
-  frameRate(4);
-  //number
-  //println(6);
-  //variable for Mark
-  //int Mark = 6;
-  //println(Mark);
+  //size for text
+  textSize(43);
+  //location for text
+  text(s, 20, 50);
+  text(s, 20, 475);
+  //Rate of frame for dice roll
 
-  //text
-  //fill(#EE1414);
-  textAlign(CENTER, TOP);
-  //String s = "Click the die to get random number from 0 to 6.";
-  //text(s, 150, 250, 80, 100);
-  //text(s, 150, 250, 125, 140);
+}  
+  void mouseClicked() {
+  //fill for number
+  fill(#555666);
+  //size for number
   textSize(75);
-  //textAlign(CENTER, TOP);
-  //text(int(random(6)), width/2, height/2);
-  //fill
-  //fill(#33E3FF);
+  //Displays random integer for number
+  text(int(random(6)), width/2, height/2);
 }
